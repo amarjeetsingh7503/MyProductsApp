@@ -33,14 +33,8 @@ const ProductDetails = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
-      <Link
-        to="/products"
-        className="inline-block mb-6 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 transition"
-      >
-        ← Back to Products
-      </Link>
-
       <div className="grproductId grproductId-cols-1 md:grproductId-cols-2 gap-10">
+        <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
         <img
           src={product.thumbnail}
           alt={product.title}
@@ -48,14 +42,13 @@ const ProductDetails = () => {
         />
 
         <div>
-          <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
-
+          <p className="text-lg font-bold mb-4">Description</p>
           <p className="text-lg text-gray-700 mb-4">{product.description}</p>
 
           <p className="text-xl font-semibold mb-2">Price: ${product.price}</p>
 
-          <p className="text-yellow-500 font-medium mb-4">
-            ⭐ Rating: {product.rating}
+          <p className="text-black font-medium mb-4">
+            Rating: {product.rating}
           </p>
 
           <p className="text-gray-600 mb-4">

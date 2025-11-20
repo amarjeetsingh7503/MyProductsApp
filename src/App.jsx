@@ -3,14 +3,16 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
+import Breadcrumbs from "./components/Breadcrumbs";
 
 const App = () => {
   return (
     <>
+      <Breadcrumbs />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/productDetails/:productId" element={<ProductDetails />} />
+        <Route path="/products/:productId" element={<ProductDetails />} />
       </Routes>
     </>
   );

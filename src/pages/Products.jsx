@@ -49,7 +49,7 @@ const Products = () => {
             </p>
             <p className="text-yellow-500 mb-3">⭐ {item.rating}</p>
             <Link
-              to={`/productDetails/${item.id}`}
+              to={`/products/${item.id}`}
               className="bg-[#94bbe9] text-black px-4 py-2 rounded-lg mt-auto hover:bg-[#7aa9df] transition"
             >
               View Details
